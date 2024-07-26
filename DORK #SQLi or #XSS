@@ -2,3 +2,6 @@
 
 
 #Dork: inurl:search.php?q= | inurl:search.asp?q= | inurl:search.jsp?q= | inurl:/?search=
+
+
+#Dork: inurl:"server-status" intitle:"Apache Status" intext:"Apache Server Status for"
