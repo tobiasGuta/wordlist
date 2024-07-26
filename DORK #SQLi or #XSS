@@ -1,1 +1,4 @@
 #Dork: inurl:search.php?q= intitle:university
+
+
+#Dork: inurl:search.php?q= | inurl:search.asp?q= | inurl:search.jsp?q= | inurl:/?search=
