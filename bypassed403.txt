@@ -2,3 +2,7 @@ GET api/v3/offers/ => 403 access deneid
 GET api/v2/offers/ => 200 OK 
 ---------------------------------
 
+Original URL: https://webapp.com/api.php --> 403 Forbidden
+Modified URL: https://webapp.com/api.php (%09) --> 200 OK
+
+-------------------------------------
