@@ -3,3 +3,4 @@
 /_vti_pvt/service.pwd
 /haproxy
 /netdata
+wp-config.php.orig
