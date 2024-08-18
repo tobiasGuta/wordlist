@@ -1,2 +1,5 @@
 .gitlab-ci.yml
 /system/logs
+/_vti_pvt/service.pwd
+/haproxy
+/netdata
