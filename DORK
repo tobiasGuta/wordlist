@@ -30,3 +30,8 @@ inurl:url= | inurl:return= | inurl:next= | inurl:redirect= | inurl:redir= | inur
 #sql 
 
 inurl:id= | inurl:pid= | inurl:category= | inurl:cat= | inurl:action= | inurl:sid= | inurl:dir= inurl:& site:nasa.gov
+
+#local file inclusion
+
+inurl:page= | inurl:file= | inurl:view= | inurl:include= | inurl:path= | inurl:show= site:example.com
+
