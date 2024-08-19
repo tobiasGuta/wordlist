@@ -40,3 +40,41 @@ inurl:page= | inurl:file= | inurl:view= | inurl:include= | inurl:path= | inurl:s
 inurl:.env | inurl:.git | inurl:.svn | inurl:.bak | inurl:.backup | inurl:.sql | inurl:.php | inurl:.config site:example.com
 
 
+===================================================================================
+
+1. Discovering Sensitive Files
+inurl:config.php | inurl:wp-config.php | inurl:database.php | inurl:config.yml | inurl:settings.py site:example.com
+inurl:.bak | inurl:.backup | inurl:.sql | inurl:.zip | inurl:.tar site:example.com
+
+2. Finding Admin Panels and Login Pages
+intitle:"Admin Login" | intitle:"Admin Panel" | inurl:admin | inurl:admin_login site:example.com
+inurl:login | inurl:signin | inurl:sign_in | inurl:auth site:example.com
+
+3. Locating Interesting Subdomains
+Subdomains:
+site:*.example.com -www
+inurl:mail. | inurl:ftp. | inurl:dev. | inurl:beta. | inurl:staging. site:example.com
+
+4. Finding Potential SQL Injection Points
+inurl:id= | inurl:pid= | inurl:category= | inurl:product_id= | inurl:news_id= site:example.com
+inurl:.php?id= | inurl:.php?page= | intitle:"Warning: mysql_query" | intitle:"Error: SQL syntax" site:example.com
+
+5. Exposing Directory Listings
+intitle:"Index of" site:example.com
+
+6. Finding Exposed API Endpoints
+inurl:/api/ | inurl:/v1/ | inurl:/v2/ | inurl:/rest/ site:example.com
+
+7. Exploiting XSS Vulnerabilities
+inurl:?search= | inurl:?query= | inurl:?term= site:example.com
+inurl:.js site:example.com
+
+8. Finding Source Code
+inurl:.git | inurl:.svn | inurl:.hg | inurl:.bzr site:example.com
+
+9. Discovering Open Redirects
+inurl:redirect= | inurl:goto= | inurl:url= site:example.com
+
+10. Finding SSL/TLS Issues
+SSL/TLS Configurations:
+intitle:"Index of" "ssl" site:example.com
