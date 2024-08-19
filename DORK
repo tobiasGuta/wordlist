@@ -35,3 +35,8 @@ inurl:id= | inurl:pid= | inurl:category= | inurl:cat= | inurl:action= | inurl:si
 
 inurl:page= | inurl:file= | inurl:view= | inurl:include= | inurl:path= | inurl:show= site:example.com
 
+ "juicy" extensions,
+
+inurl:.env | inurl:.git | inurl:.svn | inurl:.bak | inurl:.backup | inurl:.sql | inurl:.php | inurl:.config site:example.com
+
+
