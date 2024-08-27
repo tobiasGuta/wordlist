@@ -78,3 +78,12 @@ inurl:redirect= | inurl:goto= | inurl:url= site:example.com
 10. Finding SSL/TLS Issues
 SSL/TLS Configurations:
 intitle:"Index of" "ssl" site:example.com
+
+PHP extension w/ parameters
+site:http://example.com ext:php inurl:?
+
+API Endpoints
+site:example[.]com inurl:api | site:*/rest | site:*/v1 | site:*/v2 | site:*/v3
+
+Juicy Extensions
+site:"example[.]com" ext:log | ext:txt | ext:conf | ext:cnf |
