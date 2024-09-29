@@ -33,3 +33,7 @@ Traversal
 
 GET api/v3/offers/ => 403 access deneid 
 GET api/v2/offers/ => 200 OK 
+
+ If your target use api service like 
+https://target.com/api --block
+http://target.com/apidocs -- 200 OK
