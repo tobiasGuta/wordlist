@@ -1,171 +1,78 @@
-site:codepad.co “Your target Compnay name” 
-site:coggle.it “Your target Compnay name” 
-site:pastebin.com “Your target Compnay name”
-site:repl.it “Your target Compnay name”
-site:gitter.im “Your target Compnay name” 
-site:bitbucket.org “Your target Compnay name”
-site:pastebin.com “Your target Compnay name”
-site:codepad.co “Your target Compnay name”
-#Dork: inurl:search.php?q= intitle:university
-
-
-#Dork: inurl:search.php?q= | inurl:search.asp?q= | inurl:search.jsp?q= | inurl:/?search=
-
-
-#Dork: inurl:"server-status" intitle:"Apache Status" intext:"Apache Server Status for"
-
-
-
+# General Queries
+site:codepad.co “Your target Company name”
+site:coggle.it “Your target Company name”
+site:pastebin.com “Your target Company name”
+site:repl.it “Your target Company name”
+site:gitter.im “Your target Company name”
+site:bitbucket.org “Your target Company name”
 site:example[.]com inurl:test | inurl:env | inurl:dev | inurl:staging | inurl:sandbox | inurl:debug | inurl:temp | inurl:internal | inurl:demo
 
+# Search Dorks
+#Dork: inurl:search.php?q= intitle:university
+#Dork: inurl:search.php?q= | inurl:search.asp?q= | inurl:search.jsp?q= | inurl:/?search=
+#Dork: inurl:"server-status" intitle:"Apache Status" intext:"Apache Server Status for"
 (intext:”index of /.git”) (“parent directory”)
-
 Dorking: site:NASA.gov "drive url"
 
-
-
-intitle:"index of" ".ssh" OR "ssh_config" OR "ssh_known_hosts" OR "authorized_keys" OR "id_rsa" OR "id_dsa"
-
-
-# XSS
-
-inurl:q= | inurl:s= | inurl:search= | inurl:query= | inurl:keyword= | inurl:lang= inurl:& site:example.com
-
-# Redirect
-
-inurl:url= | inurl:return= | inurl:next= | inurl:redirect= | inurl:redir= | inurl:ret= | inurl:r2= | inurl:page= inurl:& inurl:http site:nasa.gov
-
-#sql 
-
-inurl:id= | inurl:pid= | inurl:category= | inurl:cat= | inurl:action= | inurl:sid= | inurl:dir= inurl:& site:nasa.gov
-
-#local file inclusion
-
-inurl:page= | inurl:file= | inurl:view= | inurl:include= | inurl:path= | inurl:show= site:example.com
-
- "juicy" extensions,
-
-inurl:.env | inurl:.git | inurl:.svn | inurl:.bak | inurl:.backup | inurl:.sql | inurl:.php | inurl:.config site:example.com
-
-
-===================================================================================
-
-1. Discovering Sensitive Files
+# Sensitive Files and Configuration
+# Discovering Sensitive Files:
 inurl:config.php | inurl:wp-config.php | inurl:database.php | inurl:config.yml | inurl:settings.py site:example.com
 inurl:.bak | inurl:.backup | inurl:.sql | inurl:.zip | inurl:.tar site:example.com
 
-2. Finding Admin Panels and Login Pages
+# Juicy Extensions
+inurl:.env | inurl:.git | inurl:.svn | inurl:.bak | inurl:.backup | inurl:.sql | inurl:.php | inurl:.config site:example.com
+# PHP extension w/ parameters
+site:http://example.com ext:php inurl:?
+
+# Finding Admin Panels and Login Pages
 intitle:"Admin Login" | intitle:"Admin Panel" | inurl:admin | inurl:admin_login site:example.com
 inurl:login | inurl:signin | inurl:sign_in | inurl:auth site:example.com
 
-3. Locating Interesting Subdomains
+# Interesting Subdomains
 Subdomains:
 site:*.example.com -www
 inurl:mail. | inurl:ftp. | inurl:dev. | inurl:beta. | inurl:staging. site:example.com
 
-4. Finding Potential SQL Injection Points
+# Potential SQL Injection Points
 inurl:id= | inurl:pid= | inurl:category= | inurl:product_id= | inurl:news_id= site:example.com
 inurl:.php?id= | inurl:.php?page= | intitle:"Warning: mysql_query" | intitle:"Error: SQL syntax" site:example.com
 
-5. Exposing Directory Listings
+# Exposing Directory Listings
 intitle:"Index of" site:example.com
 
-6. Finding Exposed API Endpoints
+# Exposed API Endpoints
 inurl:/api/ | inurl:/v1/ | inurl:/v2/ | inurl:/rest/ site:example.com
 
-7. Exploiting XSS Vulnerabilities
+# Exploiting XSS Vulnerabilities
 inurl:?search= | inurl:?query= | inurl:?term= site:example.com
 inurl:.js site:example.com
 
-8. Finding Source Code
+# Finding Source Code
 inurl:.git | inurl:.svn | inurl:.hg | inurl:.bzr site:example.com
 
-9. Discovering Open Redirects
+# Discovering Open Redirects
 inurl:redirect= | inurl:goto= | inurl:url= site:example.com
 
-10. Finding SSL/TLS Issues
-SSL/TLS Configurations:
+# Finding SSL/TLS Issues
+# SSL/TLS Configurations:
 intitle:"Index of" "ssl" site:example.com
 
-PHP extension w/ parameters
-site:http://example.com ext:php inurl:?
-
-API Endpoints
-site:example[.]com inurl:api | site:*/rest | site:*/v1 | site:*/v2 | site:*/v3
-
-Juicy Extensions
-site:"example[.]com" ext:log | ext:txt | ext:conf | ext:cnf |
-
-
-
-
-PHP extension w/ parameters site:example.com ext:php inurl:?
-API Endpoints
-site:example[.]com inurl:api | site:*/rest | site:*/v1 | site:*/v2 | site:*/v3
-Juicy Extensions
-site:"example[.]com" ext:log | ext:txt | ext:conf | ext:cnf | ext:ini | ext:env | ext:sh | ext:bak | ext:backup | ext:swp | ext:old | ext:~ | ext:git | ext:svn | ext:htpasswd | ext:htaccess | ext:json
-High % inurl keywords
-inurl:conf | inurl:env | inurl:cgi | inurl:bin | inurl:etc | inurl:root | inurl:sql | inurl:backup | inurl:admin | inurl:php site:example[.]com
-Server Errors
-inurl:"error" | intitle:"exception" | intitle:"failure" | intitle:"server at" | inurl:exception | "database error" | "SQL syntax" | "undefined index" | "unhandled exception" | "stack trace" site:example[.]com
-XSS prone parameters
-inurl:q= | inurl:s= | inurl:search= | inurl:query= | inurl:keyword= | inurl:lang= inurl:& site:example.com Open Redirect prone parameters
-inurl:url= | inurl:return= | inurl:next= | inurl:redirect= | inurl:redir= | inurl:ret | inurl:r2= | inurl:page= inurl:& inurl:http site:example.com
-SQLi Prone Parameters
-inurl:id=| inurl:pid= | inurl:category= | inurl:cat= | inurl:action= | inurl:sid= | inurl:dir= inurl:&
-site:example.com
-SSRF Prone Parameters
-inurl:http | inurl:url= | inurl:path= | inurl:dest | inurl:html | inurl:data= | inurl:domain= | inurl:page= inurl:& site:example.com
-
-⛔️XSS prone parameters:
-
-inurl:q= | inurl:s= | inurl:search= | inurl:query= | inurl:keyword= | inurl:lang= inurl:& site:example[.]com
-
-⛔️Open Redirect prone parameters
-
-inurl:url= | inurl:return= | inurl:next= | inurl:redirect= | inurl:redir= | inurl:ret= | inurl:r2= | inurl:page= inurl:& inurl:http site:example[.]com
-
-⛔️SQLi Prone Parameters
-
-inurl:id= | inurl:pid= | inurl:category= | inurl:cat= | inurl:action= | inurl:sid= | inurl:dir= inurl:& site:example[.]com
-
-⛔️SSRF Prone Parameters
-
-inurl:http | inurl:url= | inurl:path= | inurl:dest= | inurl:html= | inurl:data= | inurl:domain= | inurl:page= inurl:& site:example[.]com
-
-⛔️LFI Prone Parameters
-
-inurl:include | inurl:dir | inurl:detail= | inurl:file= | inurl:folder= | inurl:inc= | inurl:locate= | inurl:doc= | inurl:conf= inurl:& site:example[.]com
-
-⛔️RCE Prone Parameters
-
-inurl:cmd | inurl:exec= | inurl:query= | inurl:code= | inurl:do= | inurl:run= | inurl:read= | inurl:ping= inurl:& site:example[.]com
-
-
-✅AWS S3 Buckets:
-
+# Cloud Storage Queries
+# ✅ AWS S3 Buckets:
 site:s3.amazonaws[.]com "example[.]com"
 s3-external-1.amazonaws[.]com "example[.]com"
 s3.dualstack.us-east-1.amazonaws[.]com "example[.]com"
-
-✅Azure Blob Storage:
-
+# ✅ Azure Blob Storage:
 site:blob.core[.]windows[.]net "example[.]com"
 site:dev[.]azure[.]com "example[.]com"
-
-✅Google Cloud:
-
+# ✅ Google Cloud:
 site:googleapis[.]com "example[.]com"
 site:drive[.]google[.]com "example[.]com"
 site:docs[.]google[.]com inurl:"/d/" "example[.]com"
-
-✅Microsoft Cloud:
-
+# ✅ Microsoft Cloud:
 site:onedrive[.]live[.]com "example[.]com"
-site:sharepoint.]com "example[.]com"
-
-✅More Cloud Providers:
-
+site:sharepoint.com "example[.]com"
+# ✅ More Cloud Providers:
 site:digitaloceanspaces[.]com "example[.]com"
 site:dropbox[.]com/s "example[.]com"
 site:box[.]com/s "example[.]com"
