@@ -1,3 +1,7 @@
+# SSRF Prone Parameters
+
+inurl:http | inurl:url= | inurl:path= | inurl:dest= | inurl:html= | inurl:data= | inurl:domain= | inurl:page= inurl:& site:example[.]com
+
 # RCE Prone Parameters
 
 inurl:cmd | inurl:exec= | inurl:query= | inurl:code= | inurl:do= | inurl:run= | inurl:read= | inurl:ping= inurl:& site:example[.]com
@@ -31,6 +35,7 @@ inurl:mail. | inurl:ftp. | inurl:dev. | inurl:beta. | inurl:staging. site:exampl
 # Potential SQL Injection Points
 inurl:id= | inurl:pid= | inurl:category= | inurl:product_id= | inurl:news_id= site:example.com
 inurl:.php?id= | inurl:.php?page= | intitle:"Warning: mysql_query" | intitle:"Error: SQL syntax" site:example.com
+inurl:id= | inurl:pid= | inurl:category= | inurl:cat= | inurl:action= | inurl:sid= | inurl:dir= inurl:& site:example[.]com
 
 # Exposing Directory Listings
 intitle:"Index of" site:example.com
