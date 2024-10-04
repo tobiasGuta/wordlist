@@ -41,6 +41,7 @@ inurl:.php?id= | inurl:.php?page= | intitle:"Warning: mysql_query" | intitle:"Er
 intitle:"Index of" site:example.com
 site:example.com inurl:?i=
 site:targetsite.com inurl:?i= filetype:php
+inurl:include | inurl:dir | inurl:detail= | inurl:file= | inurl:folder= | inurl:inc= | inurl:locate= | inurl:doc= | inurl:conf= inurl:& site:example.com
 
 # Exposed API Endpoints
 inurl:/api/ | inurl:/v1/ | inurl:/v2/ | inurl:/rest/ site:example.com
