@@ -39,6 +39,7 @@ inurl:.php?id= | inurl:.php?page= | intitle:"Warning: mysql_query" | intitle:"Er
 
 # Exposing Directory Listings
 intitle:"Index of" site:example.com
+site:example.com inurl:?i=
 
 # Exposed API Endpoints
 inurl:/api/ | inurl:/v1/ | inurl:/v2/ | inurl:/rest/ site:example.com
