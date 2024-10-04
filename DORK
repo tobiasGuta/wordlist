@@ -1,11 +1,6 @@
-# General Queries
-site:codepad.co “Your target Company name”
-site:coggle.it “Your target Company name”
-site:pastebin.com “Your target Company name”
-site:repl.it “Your target Company name”
-site:gitter.im “Your target Company name”
-site:bitbucket.org “Your target Company name”
-site:example[.]com inurl:test | inurl:env | inurl:dev | inurl:staging | inurl:sandbox | inurl:debug | inurl:temp | inurl:internal | inurl:demo
+# RCE Prone Parameters
+
+inurl:cmd | inurl:exec= | inurl:query= | inurl:code= | inurl:do= | inurl:run= | inurl:read= | inurl:ping= inurl:& site:example[.]com
 
 # Search Dorks
 #Dork: inurl:search.php?q= intitle:university
