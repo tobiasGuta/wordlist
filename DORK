@@ -73,6 +73,6 @@ site:docs.google.com inurl:"/d/" "example[.]com"
 site:onedrive.live.com "example[.]com"
 site:sharepoint.com "example[.]com"
 # ✅ More Cloud Providers:
-site:digitaloceanspaces[.]com "example[.]com"
+site:digitaloceanspaces.com "example[.]com"
 site:dropbox.com/s "example[.]com"
 site:box.com/s "example[.]com"
