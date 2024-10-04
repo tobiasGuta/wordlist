@@ -49,6 +49,7 @@ inurl:/api/ | inurl:/v1/ | inurl:/v2/ | inurl:/rest/ site:example.com
 # Exploiting XSS Vulnerabilities
 inurl:?search= | inurl:?query= | inurl:?term= site:example.com
 inurl:.js site:example.com
+inurl:q= | inurl:s= | inurl:search= | inurl:query= | inurl:keyword= | inurl:lang= inurl:& site:example[.]com
 
 # Finding Source Code
 inurl:.git | inurl:.svn | inurl:.hg | inurl:.bzr site:example.com
