@@ -5,3 +5,4 @@
 /netdata
 wp-config.php.orig
 home/000~ROOT~000/
+info.php
