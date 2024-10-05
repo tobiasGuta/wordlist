@@ -1,0 +1,7 @@
+let urls = [];
+$$('*').forEach(element => {
+  if (element.src) urls.push(element.src);
+  if (element.href) urls.push(element.href);
+  if (element.url) urls.push(element.url);
+});
+console.log(...new Set(urls));
