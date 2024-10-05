@@ -62,7 +62,7 @@ site:example.com inurl:"proxy.php?url=" OR inurl:"proxy.php?dest=" OR inurl:"pro
 inurl:"link.php?url=" OR inurl:"link.php?redirect=" OR inurl:"link.php?destination=" OR inurl:"link.php?target=" OR inurl:"link.php?session=" OR inurl:"link.php?auth=" OR inurl:"link.php?token=" OR inurl:"link.php?ref=" OR inurl:"link.php?track=" OR inurl:"link.php?source=" OR inurl:"link.php?link=" OR inurl:"link.php?goto=" OR inurl:"link.php?next=" OR inurl:"link.php?forward=" OR inurl:"link.php?move="
 inurl:"link.php?url=" OR inurl:"link.php?redirect="
 inurl:"click.php?" site:example.com
-
+inurl:"click.php?url=" OR inurl:"click.php?redirect=" OR inurl:"click.php?target=" OR inurl:"click.php?go=" site:*.gov
 
 
 # Finding SSL/TLS Issues
