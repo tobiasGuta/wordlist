@@ -57,6 +57,9 @@ inurl:.git | inurl:.svn | inurl:.hg | inurl:.bzr site:example.com
 # Discovering Open Redirects
 inurl:redirect= | inurl:goto= | inurl:url= site:example.com
 inurl:url= | inurl:return= | inurl:next= | inurl:redirect= | inurl:redir= | inurl:ret= | inurl:r2= | inurl:page= inurl:& inurl:http site:example[.]com
+inurl:"proxy.php?url=" OR inurl:"proxy.php?dest=" OR inurl:"proxy.php?redirect=" OR inurl:"proxy.php?next=" OR inurl:"proxy.php?destination="
+site:example.com inurl:"proxy.php?url=" OR inurl:"proxy.php?dest=" OR inurl:"proxy.php?redirect=" OR inurl:"proxy.php?next=" OR inurl:"proxy.php?destination="
+
 
 # Finding SSL/TLS Issues
 # SSL/TLS Configurations:
