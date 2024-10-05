@@ -61,6 +61,7 @@ inurl:"proxy.php?url=" OR inurl:"proxy.php?dest=" OR inurl:"proxy.php?redirect="
 site:example.com inurl:"proxy.php?url=" OR inurl:"proxy.php?dest=" OR inurl:"proxy.php?redirect=" OR inurl:"proxy.php?next=" OR inurl:"proxy.php?destination="
 inurl:"link.php?url=" OR inurl:"link.php?redirect=" OR inurl:"link.php?destination=" OR inurl:"link.php?target=" OR inurl:"link.php?session=" OR inurl:"link.php?auth=" OR inurl:"link.php?token=" OR inurl:"link.php?ref=" OR inurl:"link.php?track=" OR inurl:"link.php?source=" OR inurl:"link.php?link=" OR inurl:"link.php?goto=" OR inurl:"link.php?next=" OR inurl:"link.php?forward=" OR inurl:"link.php?move="
 inurl:"link.php?url=" OR inurl:"link.php?redirect="
+inurl:"click.php?" site:example.com
 
 
 
