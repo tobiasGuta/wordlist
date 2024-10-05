@@ -1,3 +1,5 @@
+# The script you've provided collects the src, href, and url attributes from all HTML elements on a webpage, and logs the unique values.
+
 let urls = [];
 $$('*').forEach(element => {
   if (element.src) urls.push(element.src);
