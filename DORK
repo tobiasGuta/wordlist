@@ -1,6 +1,10 @@
 # SSRF Prone Parameters
 
 inurl:http | inurl:url= | inurl:path= | inurl:dest= | inurl:html= | inurl:data= | inurl:domain= | inurl:page= inurl:& site:example[.]com
+site:example.com inurl:proxy? inurl:source=
+site:example.com inurl:proxy?*source=
+
+
 
 # RCE Prone Parameters
 
