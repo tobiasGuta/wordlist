@@ -1,4 +1,4 @@
-/%2f
+https://www.google.com/%2f
 /%09/example.com
 /%2f%2fexample.com
 /%2f%2f%2fbing.com%2f%3fwww.omise.co
