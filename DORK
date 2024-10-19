@@ -4,8 +4,6 @@ inurl:http | inurl:url= | inurl:path= | inurl:dest= | inurl:html= | inurl:data= 
 site:example.com inurl:proxy? inurl:source=
 site:example.com inurl:proxy?*source=
 
-
-
 # RCE Prone Parameters
 
 inurl:cmd | inurl:exec= | inurl:query= | inurl:code= | inurl:do= | inurl:run= | inurl:read= | inurl:ping= inurl:& site:example[.]com
@@ -92,3 +90,7 @@ site:sharepoint.com "example[.]com"
 site:digitaloceanspaces.com "example[.]com"
 site:dropbox.com/s "example[.]com"
 site:box.com/s "example[.]com"
+
+[+] Google Dork - Server Errors ⚡
+
+inurl:"error" | intitle:"exception" | intitle:"failure" | intitle:"server at" | inurl:exception | "database error" | "SQL syntax" | "undefined index" | "unhandled exception" | "stack trace" site:example[.]com 
